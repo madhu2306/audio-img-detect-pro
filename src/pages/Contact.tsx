@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Send, Contact } from 'lucide-react';
+import { Send, Contact, Mail, Phone } from 'lucide-react';
 import { toast } from 'sonner';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -149,23 +149,23 @@ const ContactPage: React.FC = () => {
                   <div className="bg-gray-50 p-6 rounded-lg">
                     <div className="flex items-center mb-6">
                       <div className="bg-primary/10 rounded-full w-12 h-12 flex items-center justify-center mr-4">
-                        <Contact size={24} className="text-primary" />
+                        <Mail size={24} className="text-primary" />
                       </div>
                       <div>
                         <h3 className="font-semibold">Email</h3>
-                        <p className="text-gray-600">info@deepfakedetect.com</p>
+                        <p className="text-gray-600">mathumithababu2306@gmail.com</p>
+                        <p className="text-gray-600">sshabitha2003@gmail.com</p>
                       </div>
                     </div>
                     
                     <div className="flex items-center mb-6">
                       <div className="bg-primary/10 rounded-full w-12 h-12 flex items-center justify-center mr-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                        </svg>
+                        <Phone size={24} className="text-primary" />
                       </div>
                       <div>
                         <h3 className="font-semibold">Phone</h3>
-                        <p className="text-gray-600">+1 (123) 456-7890</p>
+                        <p className="text-gray-600">+91 8610331771</p>
+                        <p className="text-gray-600">+91 8438632689</p>
                       </div>
                     </div>
                     

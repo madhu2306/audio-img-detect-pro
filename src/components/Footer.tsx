@@ -31,8 +31,10 @@ const Footer: React.FC = () => {
           
           <div>
             <h3 className="font-semibold text-lg mb-4">Contact</h3>
-            <p className="text-gray-400">Email: info@deepfakedetect.com</p>
-            <p className="text-gray-400">Phone: +1 (123) 456-7890</p>
+            <p className="text-gray-400">Email: mathumithababu2306@gmail.com</p>
+            <p className="text-gray-400">Email: sshabitha2003@gmail.com</p>
+            <p className="text-gray-400">Phone: +91 8610331771</p>
+            <p className="text-gray-400">Phone: +91 8438632689</p>
           </div>
         </div>
         
