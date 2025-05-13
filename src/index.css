@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,10 +14,10 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 264 34% 50%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
+    --secondary: 260 100% 97%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
@@ -61,8 +62,8 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 264 34% 50%;
+    --primary-foreground: 210 40% 98%;
 
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
@@ -97,5 +98,39 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .gradient-bg {
+    @apply bg-gradient-to-br from-purple-50 to-blue-50;
+  }
+  
+  .card-gradient {
+    @apply bg-gradient-to-br from-white to-purple-50/50;
+  }
+
+  .upload-container {
+    @apply relative bg-white border-2 border-dashed border-gray-300 rounded-lg p-6 flex flex-col items-center justify-center cursor-pointer hover:border-primary/70 transition-all;
+    min-height: 200px;
+  }
+
+  .upload-container.active {
+    @apply border-primary border-solid bg-primary/5;
+  }
+
+  .scan-btn {
+    @apply bg-primary hover:bg-primary/90 text-white font-medium py-3 px-8 rounded-lg shadow-md hover:shadow-lg transition-all;
+  }
+
+  .confidence-meter {
+    @apply relative h-6 bg-gray-200 rounded-full overflow-hidden;
+  }
+  
+  .confidence-meter-fill {
+    @apply h-full transition-all duration-1000 ease-out;
+  }
+  
+  .fake-highlight {
+    @apply absolute border-2 border-red-500 animate-pulse;
   }
 }
